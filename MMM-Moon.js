@@ -1,6 +1,8 @@
 Module.register("MMM-Moon", {
   defaults:{
-    category: "Astronomy"
+    category: "Astronomy",
+    lat: 41.657,
+    lon: 91.534,
   },
   content:"",
 
@@ -19,7 +21,7 @@ Module.register("MMM-Moon", {
   notificationReceived: function(notification, payload) {
     Log.log("notification recieved: " + notification)
     if (notification == "ALL_MODULES_STARTED") {
-      this.sendSocketNotification("getcontent", null)
+      this.sendSocketNotification("getcontent", this.config)
     }
   },
   socketNotificationReceived: function(notification, payload) {

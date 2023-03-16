@@ -23,11 +23,11 @@ module.exports = NodeHelper.create({
 		}
 		// module wants content from api
 		else if(notification === "getcontent") {
-			 this.getcontent()
+			 this.getcontent(payload)
 		}
   },
 
-  getcontent(){
+  getcontent(settings){
     let self = this
     const options = {
         "method": "POST",
@@ -39,8 +39,7 @@ module.exports = NodeHelper.create({
         }
       };
       
-    LAT = 41.657
-    LON = 91.534
+
     
     const req = http.request(options, function (res) {
       const chunks = [];
@@ -68,8 +67,8 @@ module.exports = NodeHelper.create({
         "textColor": "white"
       },
       "observer": {
-        "latitude": LAT,
-        "longitude": LON,
+        "latitude": settings.lat,
+        "longitude": settings.lon,
         "date": "2023-03-15"
       },
       "view": {
