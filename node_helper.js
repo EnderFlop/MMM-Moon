@@ -56,11 +56,16 @@ module.exports = NodeHelper.create({
         console.log("send complete")
       });
     });
+
+    const d = new Date()
+    const timezoneD = new Date(d.toLocaleDateString("en-US", {timeZone: settings.timezone}))
+    const finalDate = timezoneD.getFullYear() + "-" + ("0" + (timezoneD.getMonth()+1)).slice(-2) + "-" + ("0" + timezoneD.getDate()).slice(-2)
     
     body = {
       "format": "png",
       "style": {
         "moonStyle": "default",
+
         "backgroundStyle": "stars",
         "backgroundColor": "white",
         "headingColor": "white",
@@ -69,7 +74,7 @@ module.exports = NodeHelper.create({
       "observer": {
         "latitude": settings.lat,
         "longitude": settings.lon,
-        "date": "2023-03-15"
+        "date": finalDate
       },
       "view": {
         "type": "portrait-simple"
