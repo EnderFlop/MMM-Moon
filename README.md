@@ -23,7 +23,6 @@ Just clone the module into your MagicMirror’s modules folder and execute `npm 
 ```bash
 git clone https://github.com/EnderFlop/MMM-Moon
 cd MMM-Moon
-npm install
 ```
 
 ## Updating
@@ -32,7 +31,6 @@ Updating is as easy as navigating to the module’s folder, pull the latest vers
 
 ```bash
 git pull
-npm install
 ```
 
 
