@@ -1,11 +1,11 @@
 
 # MMM-Moon
 
-Display a picture of the current moon phase along with moonrise and moonset times on your MagicMirror!
+Display a picture of the current moon phase along with moonrise and moonset times on your MagicMirror²!
 
 ## How it works
 
-Add the module to your MagicMirror like any other module, then add the "lat", "lon", and "timezone" parameters to your configuration file! The app calls the AstronomyAPI and gets an image with your parameters, then throws it onto your mirror!
+Add the module to your MagicMirror² like any other module, then add the "lat", "lon", and "timezone" parameters to your configuration file! The app calls the AstronomyAPI and gets an image with your parameters, then throws it onto your mirror!
 
 ## Screenshots
 
@@ -13,7 +13,7 @@ Add the module to your MagicMirror like any other module, then add the "lat", "l
 
 ## Preconditions
 
-* MagicMirror2 instance
+* MagicMirror² instance
 * Node.js version >= 19
 * npm
 
