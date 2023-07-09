@@ -38,8 +38,8 @@ git pull
 
 | Option | Description |
 | ------ | ----------- |
-| `lat` | The latitude of your location<br>**Type:** `integer`<br>**Example:** `20.545`<br>**Default value:** `41.657` <br>|
-| `lon` | The longitude of your location<br>**Type:** `integer`<br>**Example:** `-67.420`<br>**Default value:** `91.534` <br>|
+| `lat` | The latitude of your location<br>**Type:** `number`<br>**Example:** `20.545`<br>**Default value:** `41.657` <br>|
+| `lon` | The longitude of your location<br>**Type:** `number`<br>**Example:** `-67.420`<br>**Default value:** `91.534` <br>|
 | `timezone` | Your timezone in TZ database format<br>**Type:** `string` <br>**Example:** `Europe/Paris` <br>**Default value:** `America/Chicago`<br>**Note:** You can find a [list of all TZ timezones here.](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 Here is an example for an entry in `config.js`:
