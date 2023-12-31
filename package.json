@@ -1,0 +1,19 @@
+{
+  "name": "mmm-moon",
+  "version": "2.0.0",
+  "description": "MagicMirror² displays moonrise, moonset, and an image of the moon using AstronomyAPI.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EnderFlop/MMM-Moon"
+  },
+  "keywords": [
+    "magic mirror",
+    "moon",
+    "astronomy"
+  ],
+  "author": {
+    "name": "EnderFlop",
+    "url": "https://github.com/EnderFlop"
+  },
+  "license": "ISC"
+}
