@@ -31,6 +31,7 @@ module.exports = NodeHelper.create({
 
   getcontent(settings) {
     let self = this;
+    const auth = btoa(settings.app_id + ":" + settings.app_secret) //base64 encoding AstronomyAPI app_id and app_secret for the HTTP auth.
     const options = {
       method: "POST",
       hostname: "api.astronomyapi.com",
@@ -38,7 +39,7 @@ module.exports = NodeHelper.create({
       path: "/api/v2/studio/moon-phase",
       headers: {
         Authorization:
-          "Basic MjAyNDY3ODAtNjU2MS00NGJkLWJhMTctNzliOGJlMzgxMjY2OjNlNzdjYjRjYjg1M2VjMDRjZDI2NzU3ZjEzM2M2YzE0NTBmNDE0NDJkMTFhYzFhNTE4ZTIwZTM1MThlNWFkZjQxZGIxYzU0YTc0NjBiOTdkNGQxMGE0NGYzMDYwNTAzZjAzNzcyMWRkNmIwYTQzZWRiZmVkNWJmNDY1ODRiNjA1N2U0ODhkMWUxNjNmZDg1OTlhMGUzNGI3MGI4M2I0YzhlMDQ5OGI1ZWFlNTUwYjI2NDg3ZWQ5ODEwMDJmNzViMTA1NzQwZTY3YjBkOTVhZjhkYmI5ODNjNDgxNDk5MDg0"
+          "Basic " + auth
       }
     };
 
