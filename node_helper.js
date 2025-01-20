@@ -31,7 +31,14 @@ module.exports = NodeHelper.create({
 
   getcontent(settings) {
     let self = this;
-    const auth = Buffer.from(settings.appId + ":" + settings.appSecret).toString("base64") //base64 encoding AstronomyAPI app_id and app_secret for the HTTP auth.
+
+    //if the user hasn't set a new appId or appSecret, tell them they need to.
+    if(settings.appId == "" || settings.appSecret == "") {
+      self.sendSocketNotification("node_data", "NO APP");
+      return
+    }
+
+    const auth = Buffer.from(settings.appId + ":" + settings.appSecret).toString("base64") //base64 encoding AstronomyAPI appId and appSecret for the HTTP auth.
     const options = {
       method: "POST",
       hostname: "api.astronomyapi.com",

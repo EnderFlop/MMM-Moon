@@ -1,6 +1,8 @@
 Module.register("MMM-Moon", {
   defaults:{
     category: "Astronomy",
+    appId: "",
+    appSecret: "",
     lat: 41.657,
     lon: 91.534,
     timezone: "America/Chicago"
@@ -14,6 +16,8 @@ Module.register("MMM-Moon", {
       var img = document.createElement("img")
       img.src = this.content
       outerDiv.appendChild(img)
+    } else if (this.content == "NO APP"){
+      outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
     } else {
       outerDiv.innerText = "No image!"
     }
