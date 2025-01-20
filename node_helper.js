@@ -31,7 +31,7 @@ module.exports = NodeHelper.create({
 
   getcontent(settings) {
     let self = this;
-    const auth = Buffer.from(appid + ":" + secret).toString("base64") //base64 encoding AstronomyAPI app_id and app_secret for the HTTP auth.
+    const auth = Buffer.from(settings.appId + ":" + settings.appSecret).toString("base64") //base64 encoding AstronomyAPI app_id and app_secret for the HTTP auth.
     const options = {
       method: "POST",
       hostname: "api.astronomyapi.com",
