@@ -13,16 +13,15 @@ Module.register("MMM-Moon", {
   getDom: function() {
     var outerDiv = document.createElement("div")
 
-    if (this.content == "NO APP") {
-      outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
-      return outerDiv
-    } else if (this.content) {
+  if (this.config.appId == "" || this.config.appSecret == "") {  
+    outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
+  } else if (this.content) {
       var img = document.createElement("img")
       img.src = this.content
       outerDiv.appendChild(img)
-    } else {
-      outerDiv.innerText = "No image!"
-    }
+  } else {
+    outerDiv.innerText = "No image!"
+  }
     return outerDiv
   },
   notificationReceived: function(notification, payload) {
