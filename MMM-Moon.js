@@ -12,12 +12,14 @@ Module.register("MMM-Moon", {
   start: function() {},
   getDom: function() {
     var outerDiv = document.createElement("div")
-    if (this.content) {
+
+    if (this.content == "NO APP") {
+      outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
+      return outerDiv
+    } else if (this.content) {
       var img = document.createElement("img")
       img.src = this.content
       outerDiv.appendChild(img)
-    } else if (this.content == "NO APP"){
-      outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
     } else {
       outerDiv.innerText = "No image!"
     }
