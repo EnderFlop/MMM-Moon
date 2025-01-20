@@ -20,7 +20,7 @@ Module.register("MMM-Moon", {
     return outerDiv
   },
   notificationReceived: function(notification, payload) {
-    Log.log("notification recieved: " + notification)
+    //Log.log("notification recieved: " + notification)
     if (notification == "ALL_MODULES_STARTED") {
       this.sendSocketNotification("getcontent", this.config)
     }
