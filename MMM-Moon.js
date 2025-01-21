@@ -14,7 +14,7 @@ Module.register("MMM-Moon", {
     var outerDiv = document.createElement("div")
 
   if (this.config.appId == "" || this.config.appSecret == "") {  
-    outerDic.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
+    outerDiv.innerText = "MMM-Moon needs an appId and appSecret from AstronomyAPI. See the README."
   } else if (this.content) {
       var img = document.createElement("img")
       img.src = this.content
