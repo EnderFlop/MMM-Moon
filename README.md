@@ -4,8 +4,9 @@
 Display a picture of the current moon phase along with moonrise and moonset times on your [MagicMirror²](https://github.com/MichMich/MagicMirror/)!
 
 
-  # ❗❗❗ JANUARY 2025 API CHANGE ❗❗❗
-   *To reduce server load, [**AstronomyAPI**](https://astronomyapi.com/) has asked every user to register for their own **FREE** API application. Please visit [**AstronomyAPI**](https://astronomyapi.com/), create an application, and add the new required* **appId** and **appSecret** variables to your modules config.
+# ❗❗❗ JANUARY 2025 API CHANGE ❗❗❗
+
+*To reduce server load, [**AstronomyAPI**](https://astronomyapi.com/) has asked every user to register for their own **FREE** API application. Please visit [**AstronomyAPI**](https://astronomyapi.com/), create an application, and add the new required* **appId** and **appSecret** variables to your modules config.
 
   
 
@@ -86,9 +87,9 @@ position: "top_left",
 
 config: {
 //TO GET YOUR app_id AND app_secret, VISIT AstronomyAPI AND CREATE AN APPLICATION.
-appId: "72182420-85c1-12fe-9152-97ec098a6150"  
+appId: "72182420-85c1-12fe-9152-97ec098a6150",
 
-appSecret: "07428a61bff20a38d606... {many more characters}  ...3adc4314a8c8aab2c461cf4ad53209b13ef"
+appSecret: "07428a61bff20a38d606... {many more characters}  ...3adc4314a8c8aab2c461cf4ad53209b13ef",
 
 lat: 20.545,
 

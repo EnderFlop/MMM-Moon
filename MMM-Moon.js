@@ -35,7 +35,7 @@ Module.register("MMM-Moon", {
   },
 
   async getContent () {
-    const auth = Buffer.from(this.config.appId + ":" + this.config.appSecret).toString("base64") //base64 encoding AstronomyAPI appId and appSecret for the HTTP auth.
+    const auth = btoa(this.config.appId + ":" + this.config.appSecret) //base64 encoding AstronomyAPI appId and appSecret for the HTTP auth.
     const date = new Date().toLocaleDateString("en-CA", {timeZone: this.config.timezone});
     const url = "https://api.astronomyapi.com/api/v2/studio/moon-phase";
     const options = {
