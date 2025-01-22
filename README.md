@@ -1,8 +1,7 @@
 
-  
-
 # MMM-Moon
-Display a picture of the current moon phase along with moonrise and moonset times on your MagicMirror²!
+
+Display a picture of the current moon phase along with moonrise and moonset times on your [MagicMirror²](https://github.com/MichMich/MagicMirror/)!
 
 
   # ❗❗❗ JANUARY 2025 API CHANGE ❗❗❗
@@ -20,23 +19,15 @@ Add the module to your MagicMirror² like any other module. Visit [**AstronomyAP
 
 ## Screenshots
 
-  
-
 ![Sample Picture One](./imgs/moon_pic1.png)
-
-  
 
 ## Preconditions
 
   
 
 * MagicMirror² instance
-
 * Node.js version >= 19
-
 * npm
-
-  
 
 ## Installation
 
@@ -47,27 +38,16 @@ Just clone the module into your MagicMirror’s modules folder:
   
 
 ```bash
-
-git  clone  https://github.com/EnderFlop/MMM-Moon
-
-cd  MMM-Moon
-
+git clone https://github.com/EnderFlop/MMM-Moon
+cd MMM-Moon
 ```
-
-  
 
 ## Updating
 
-  
-
 Updating is as easy as navigating to the module’s folder, pull the latest version from GitHub and install.
 
-  
-
 ```bash
-
-git  pull
-
+git pull
 ```
 
   
